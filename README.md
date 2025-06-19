@@ -1,6 +1,5 @@
 ### 📄 **README.md**
 
-````markdown
 # 🖼️ Image Editor - JavaScript Project
 
 A simple and intuitive image editor built with **HTML**, **CSS**, and **JavaScript**. It allows users to upload an image, apply visual filters, rotate or flip it, and download the edited result directly from the browser — all without needing any backend or external libraries.
@@ -35,17 +34,7 @@ A simple and intuitive image editor built with **HTML**, **CSS**, and **JavaScri
 
 ## 🧩 How to Use
 
-### 1. Clone this repository
-```bash
-git clone https://github.com/seu-usuario/image-editor.git
-cd image-editor
-````
-
-### 2. Open `index.html` in your browser
-
-No build steps or server needed — it runs entirely in the browser.
-
----
+### 1. Just click on the link: https://image-editor-three-ebon.vercel.app
 
 ## 🗂️ Project Structure
 
