@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Editor</title>
+
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <main class="editor-container">
+    <header class="editor-header">
+      <div>
+        <button id="btnResetFilters" type="button">Clean Filters</button>
+      </div>
+      <div>
+        <button id="newImg" type="button">New Image</button>
+        <button id="btnSalvar" type="button" class="btn-salvar">Save</button>
+      </div>
+    </header>
+
+    <section class="img-content">
+      <input type="file" accept="image/*" id="uploadInput" style="display: none;" />
+      <label for="uploadInput" class="upload-label">
+        <img src="img/default.png.png" alt="Imagem atual selecionada" id="previewImage" />
+      </label>
+    </section>
+
+    <footer>
+      <div class="rotate-content">
+        <button type="button" onclick="handleDirection('rotateRight')" aria-label="Girar para direita"><i class='bx bx-rotate-right'></i></button>
+        <button type="button" onclick="handleDirection('rotateLeft')" aria-label="Girar para esquerda"><i class='bx bx-rotate-left'></i></button>
+        <button type="button" onclick="handleDirection('reflectY')" aria-label="Refletir verticalmente"><i class='bx bx-reflect-vertical'></i></button>
+        <button type="button" onclick="handleDirection('reflectX')" aria-label="Refletir horizontalmente"><i class='bx bx-reflect-horizontal'></i></button>
+      </div>
+
+      <span id="spnRangeValue">0%</span>
+      <input type="range" id="rangeControl" min="0" max="200" value="100" />
+
+      <div class="filters-content">
+        <button id="filterDefault" class="active" type="button">Brightness</button>
+        <button type="button">Contrast</button>
+        <button type="button">Saturation</button>
+        <button type="button">Gray</button>
+        <button type="button">Inversion</button>
+      </div>
+    </footer>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
